@@ -1,5 +1,3 @@
-# Data Science Midterm Project
-
 ## Project Goals
 
 ### Building a supervised ML model so we can predict the housing price based on the season, region, and housing features.
