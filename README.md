@@ -59,17 +59,18 @@
 
 ## Results 🏆
 
-![Explained Variance by PCA Components](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/93bf3740-725d-4d67-88ef-cc8bb493851c)
-
-![Year Built vs. Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/dad956c0-1d20-464b-afb6-96266129dd02)
-
-
 1. **Random Forest** was chosen for its lower MAE (MAE: 10.01) and higher R² (R²: 0.98), indicating a good ability to explain variance in the data.
 2. After performing cross-validation and hyperparameter search, the best cross-validation score was:
    * Training set: 0.94
    * Test set: 0.981
    
    This indicates the model performs well on both the training and unseen test data, demonstrating good generalization and consistent hyperparameters.
+
+
+![Explained Variance by PCA Components](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/93bf3740-725d-4d67-88ef-cc8bb493851c)
+
+![Year Built vs. Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/dad956c0-1d20-464b-afb6-96266129dd02)
+
 
 ## Challenges ⚠️
 
