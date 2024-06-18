@@ -26,6 +26,9 @@
 2. Nan values in Lot SqFt, Baths, Beds, Garage were replaced with the average for each unique Type of housing.
 3. Dropped some NaN-valued columns like land which didn't have value for this model because it wasn't a house.
 
+![Boxplot for Outliers](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/ce2e79ef-d053-4741-b7e2-c01546c21393)
+
+
 ### Step 3: Outlier Detection 🚨
 
 #### Detecting outliers with Boxplot and dropping them. For example:
@@ -56,6 +59,11 @@
 
 ## Results 🏆
 
+![Explained Variance by PCA Components](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/93bf3740-725d-4d67-88ef-cc8bb493851c)
+
+![Year Built vs. Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/dad956c0-1d20-464b-afb6-96266129dd02)
+
+
 1. **Random Forest** was chosen for its lower MAE (MAE: 10.01) and higher R² (R²: 0.98), indicating a good ability to explain variance in the data.
 2. After performing cross-validation and hyperparameter search, the best cross-validation score was:
    * Training set: 0.94
@@ -73,3 +81,7 @@
 
 * Create a functions and variables file.
 * Experiment with more features and more complex categorical groups.
+
+![Distribution of Year Built](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/58c6b64d-c414-4806-92e7-161ca21ad606)
+
+![Distribution of Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/91df1803-9fd2-4d8d-9950-203bf1c153bb)
