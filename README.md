@@ -26,13 +26,12 @@
 2. Nan values in Lot SqFt, Baths, Beds, Garage were replaced with the average for each unique Type of housing.
 3. Dropped some NaN-valued columns like land which didn't have value for this model because it wasn't a house.
 
-![Boxplot for Outliers](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/ce2e79ef-d053-4741-b7e2-c01546c21393)
-
 
 ### Step 3: Outlier Detection 🚨
 
 #### Detecting outliers with Boxplot and dropping them. For example:
 * There were 107 outliers in Lot SqFt, which were dropped.
+  ![Boxplot for Outliers](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/ce2e79ef-d053-4741-b7e2-c01546c21393)
 
 ### Step 4: Data Splitting and Training 🔀
 
