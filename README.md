@@ -26,6 +26,9 @@
 2. Nan values in Lot SqFt, Baths, Beds, Garage were replaced with the average for each unique Type of housing.
 3. Dropped some NaN-valued columns like land which didn't have value for this model because it wasn't a house.
 
+![Distribution of Year Built](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/58c6b64d-c414-4806-92e7-161ca21ad606)
+
+![Distribution of Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/91df1803-9fd2-4d8d-9950-203bf1c153bb)
 
 ### Step 3: Outlier Detection 🚨
 
@@ -33,6 +36,9 @@
 * There were 107 outliers in Lot SqFt, which were dropped.
 
 ![Boxplot for Outliers](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/ce2e79ef-d053-4741-b7e2-c01546c21393)
+
+
+![Year Built vs. Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/dad956c0-1d20-464b-afb6-96266129dd02)
 
 ### Step 4: Data Splitting and Training 🔀
 
@@ -49,9 +55,13 @@
 
 #### Chose different models to determine the best performer, using Mean Absolute Error (MAE) and R² to track their performances.
 
-### Step 7: Cross-validation and Hyperparameter Optimization 🔍
+## Step 7: Cross-validation, PCA, and Hyperparameter Optimization 🔍
 
-#### Performed cross-validation and hyperparameter optimization to ensure the model was not overfitting and to find the best parameters for optimal performance.
+#### Performed cross-validation, applied PCA for dimensionality reduction, and conducted hyperparameter optimization to ensure the model was not overfitting and to find the best parameters for optimal performance.
+
+
+![Explained Variance by PCA Components](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/93bf3740-725d-4d67-88ef-cc8bb493851c)
+
 
 ### Step 8: Final Training 🏋️
 
@@ -67,11 +77,6 @@
    This indicates the model performs well on both the training and unseen test data, demonstrating good generalization and consistent hyperparameters.
 
 
-![Explained Variance by PCA Components](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/93bf3740-725d-4d67-88ef-cc8bb493851c)
-
-![Year Built vs. Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/dad956c0-1d20-464b-afb6-96266129dd02)
-
-
 ## Challenges ⚠️
 
 1. Loading JSON files correctly.
@@ -83,6 +88,3 @@
 * Create a functions and variables file.
 * Experiment with more features and more complex categorical groups.
 
-![Distribution of Year Built](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/58c6b64d-c414-4806-92e7-161ca21ad606)
-
-![Distribution of Sold Price](https://github.com/Asal-zou/predicting-the-housing-price/assets/134029102/91df1803-9fd2-4d8d-9950-203bf1c153bb)
